@@ -82,8 +82,9 @@ img {
   padding-right: 15px;
 }
 
-.flex {
+.header-flex {
   display: flex;
+  align-items: center;
 }
 
 .section {
@@ -96,6 +97,7 @@ img {
 .logo {
   color: var(--secondary-font-color);
   font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -121,11 +123,7 @@ img {
 
 /* Меню контакти */
 
-.menu {
-  display: flex;
-  column-gap: 50px;
-  margin-left: auto;
-}
+
 
 /* Навігація і контакти */
 
@@ -158,18 +156,21 @@ img {
 }
 
 .class-contact {
+  display: inline-flex;
+  padding: 32px 0px 32px;
+  align-items: center;
+
   color: var(--contact-color);
   font-weight: 500;
   line-height: 1.14;
+  font-size: 16px;
 
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
 }
 
 .class-contact:hover,
 .class-contact:focus {
-  color: var(--secondary-font-color);
+  color: rgba(0, 0, 0, 1);
 }
 
 .line {
@@ -194,7 +195,7 @@ img {
 .section-hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg.jpg);
-  background-size: width="1600";
+  background-size: width= '1600';
   background-repeat: no-repeat;
   background-position: center;
 
@@ -358,7 +359,6 @@ img {
   line-height: 1.7;
 
   padding: 60px 0px;
-  
 }
 
 /* Портфолио */
@@ -443,5 +443,62 @@ img {
 }
 
 .contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-size: 32px 32px;
+  margin-right: 10px;
+  width: 161px;
+
+}
+
+.contact-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact + .header-contact {
+  margin-left: 50px;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color)
+
+.contact-icon-svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.perevagi-list {
+  display: flex;
+}
+
+.perevagi-fon:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px; 
+
+}
+
+.perevagi-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  background-color: var(--buckground-color-1);
+}
+
+.icon-win {
+  align-items: center;
 }

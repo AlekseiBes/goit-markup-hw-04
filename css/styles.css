@@ -576,11 +576,13 @@ img {
   fill: rgba(175, 177, 184, 1);
 }
 
-.team-fon:hover {
+.team-fon:hover,
+.team-fon:focus {
   background-color: rgba(33, 150, 243, 1);
 }
 
-.team-fon:hover svg {
+.team-fon:hover svg,
+.team-fon:focus svg {
   fill: rgba(255, 255, 255, 1);
 }
 
@@ -618,7 +620,8 @@ img {
   fill: rgba(255, 255, 255, 1);
 }
 
-.footer-fon:hover {
+.footer-fon:hover,
+.footer-fon:focus {
   background-color: rgba(33, 150, 243, 1);
 }
 

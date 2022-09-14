@@ -279,26 +279,6 @@ img {
   column-gap: 30px;
 }
 
-/* Заголовок команди */
-
-.title-h3-2 {
-  color: var(--third-font-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  padding-bottom: 10px;
-}
-
-.team-box {
-  padding: 30px 0px;
-}
-
-.team-box .list {
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-}
-
 /* колір фону команди*/
 
 .color-team {
@@ -352,8 +332,43 @@ img {
 
 .contact {
   font-style: normal;
-
   margin-top: 20px;
+}
+
+/* Кліенти */
+
+.client {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.client-fon {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-fon svg {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.client-fon svg:hover {
+  fill: rgba(33, 150, 243, 1);
+}
+
+.client-fon:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+  border-radius: 4px;
+  fill: rgba(33, 150, 243, 1);
 }
 
 /* Секція футер */
@@ -426,6 +441,8 @@ img {
 .button-portfolio:hover {
   background-color: var(--secondary-font-color);
   color: var(--primari-buckground-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 /* Сітка єлементів */
@@ -514,7 +531,27 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-box .list a {
+/* Команда */
+
+.title-h3-2 {
+  color: var(--third-font-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  padding-bottom: 10px;
+}
+
+.team-box {
+  padding: 30px 0px;
+}
+
+.team-icon {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.team-fon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -522,38 +559,15 @@ img {
   align-items: center;
   justify-content: center;
 }
-.team-box .list svg {
+
+.team-fon svg {
   fill: rgba(175, 177, 184, 1);
 }
-.team-box .list a:hover {
+
+.team-fon:hover {
   background-color: rgba(33, 150, 243, 1);
 }
 
-.team-box .list a:hover svg {
+.team-fon:hover svg {
   fill: rgba(255, 255, 255, 1);
-}
-
-/* Кліенти */
-
-.client {
-display: flex;
-column-gap: 30px;
-width: 170px;
-height: 92px;
-}
-
-.client svg {
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
-.client svg {
-  fill: rgba(175, 177, 184, 1);
-}
-
-.client svg:hover {
-  fill: rgba(33, 150, 243, 1);
-  border: 1px solid rgba(33, 150, 243, 1);
 }
